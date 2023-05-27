@@ -11,18 +11,21 @@ html {
 
   body {background-color:#fff100 }
 
-  #mainbox {background-color:#fcd433;
-    display: flex;
-    height: 20%;
-    width: 70%;
-    margin: auto;
-    border-radius: 25px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+  #mainbox {
+    
+  background-color:#fcd433;
+  margin: auto;
+  width: 300px;
+  height: 100px;
+  padding: 70px;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  border-radius: 25PX;
+  /*border: 3px solid green;*/
     
   }
 
@@ -30,12 +33,11 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+    
     /*background-color:blue;*/
     height: 40%;
     width: 80%;
     margin: auto;
-
     position: absolute;
     top: 50%;
     left: 50%;
@@ -43,3 +45,5 @@ html {
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
   }
+
+  
