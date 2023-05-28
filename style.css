@@ -9,45 +9,53 @@ html {
   }
 
 
-  body {background-color:#fff100 }
-
-  #mainbox {
-    
-  background-color:#fcd433;
-  margin: auto;
-  width: 500px;
-  height: 100px;
-  padding: 70px;
-  position: absolute;
-  top:0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  border-radius: 25PX;
-  /*border: 3px solid green;*/
-    
+  body {
+    background-color:#fff100;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  
   }
 
-  #iconsection {
-    border-radius: 25PX;
-    display: flex;
-    padding: 5%;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-around;
-    /* background-color:blue; */
+  #icon_container { 
+    /*This stuff centres the icon container in the centre of the viewport*/
     position: absolute;
     top: 50%;
     left: 50%;
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+    width: auto;
+    padding: auto;
+    background-color:#fcd433;
+    border-radius: 25PX;
+
+    /*Flex Container Rules*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* border-style: solid; */
+    justify-content: center;
+    gap: 1rem; /*The space between the icons */
   }
 
-  #icon {
+  /*Two icons per div so the icons wrap evenly*/
+  #icon_set_1, #icon_set_2 { 
+    
+
+    width: auto;
+    padding: 1.5rem;
+  
+    /*Flex Container Rules*/
+    display: flex;
+    flex-direction: row;
+    /* border-style: solid; */
+    justify-content: center;
+    gap: 2rem; /*The space between the icons */
   }
-
-
 
   
+
+
+ 
+
