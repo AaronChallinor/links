@@ -1,4 +1,4 @@
-//Toggles the font awesome heartbeat class (animation) of an on when you mouse over each icon
+//Toggles the font awesome heartbeat class (animation) of an on when you mour
 
   function toggleClass(id) {
     const elements = document.getElementById(id)
