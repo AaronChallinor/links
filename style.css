@@ -15,7 +15,7 @@ html {
     
   background-color:#fcd433;
   margin: auto;
-  width: 300px;
+  width: 400px;
   height: 100px;
   padding: 70px;
   position: absolute;
@@ -30,14 +30,13 @@ html {
   }
 
   #iconsection {
+    border-radius: 25PX;
     display: flex;
+    padding: 5%;
+    width: 100%;
     flex-direction: row;
     justify-content: space-around;
-    
-    /*background-color:blue;*/
-    height: 40%;
-    width: 80%;
-    margin: auto;
+    /* background-color:blue; */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -45,5 +44,10 @@ html {
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
   }
+
+  #icon {
+  }
+
+
 
   

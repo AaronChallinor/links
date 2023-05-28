@@ -1,9 +1,10 @@
-function toggleClass() {
-    var element = document.getElementById("disc_icon");
-    element.classList.toggle("fa-beat");
+//Toggles the font awesome heartbeat class (animation) of an on when you mouse over each icon
+
+  function toggleClass(id) {
+    const elements = document.getElementById(id)
+    elements.classList.toggle("fa-beat");
   }
 
-  function toggleClass2() {
-    var element = document.getElementById("yt_icon");
-    element.classList.toggle("fa-beat");
-  }
+
+
+  
