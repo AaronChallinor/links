@@ -42,7 +42,7 @@ html {
     flex-wrap: wrap;
     /* border-style: solid; */
     justify-content: center;
-    gap: 1rem; /*The space between the icons */
+    /* gap: 1rem; The space between the icons */
     /* box-shadow: 0 2px 5px rgba(0,0,0,.1); */
   }
 
@@ -61,10 +61,12 @@ html {
     gap: 2rem; /*The space between the icons */
   }
 
-  #icon_set_2 {gap: 2.5rem;}
+  /* #icon_set_2 {gap: 2.5rem;} */
 
 
-
+  a, a:active, a:focus, span i {
+    outline: 0; /* Works in Firefox, Chrome, IE8 and above */ 
+}
 
   /*Nicked this ribbon code from somewhere*/
 
@@ -122,6 +124,45 @@ html {
 
   
 
-
+  .zoom:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    text-shadow: 0 2px 2px rgba(0,0,0,.2);
+    
+  }
  
 
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 0px dotted white;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 80px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -40px;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
